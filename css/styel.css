@@ -1,0 +1,43 @@
+body , * , *::before , *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container{
+  width: 85%;
+  margin: auto;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.item {
+  width: 30.333%;
+  margin: 18px 0;
+  cursor: pointer;
+}
+.item img{
+  width: 100%;
+}
+
+.light-box-container {
+  position: fixed;
+  background: #80808085;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.light-box-item{
+  background-image: url(../img/gallery-1.jpg);
+  width: 50%;
+  height: 550px;
+  background-size: cover;
+
+}
